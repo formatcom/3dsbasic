@@ -1,0 +1,154 @@
+#contentarea p {
+	line-height:1.2;
+}
+
+#contentarea div.index { background-color: rgb(245,245,245); font-size:13px; font-size:1.3rem; padding: 0.5em 1em; margin-bottom: 1em; }
+#contentarea div.index ul:nth-of-type(2) { border-top: 1px solid rgb(200,200,200); }
+#contentarea div.index li { display: inline; white-space:nowrap; }
+#contentarea div.index li:after { content: "｜"; color: rgb(200,200,200); }
+#contentarea div.index li:last-child:after { content: ""; }
+
+#contentarea table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-family: monospace; border: 1px solid gray; }
+#contentarea caption { text-align: left; font-weight: bold;}
+#contentarea td, 
+#contentarea th { border: 1px solid gray; padding: 0 0.5em; }
+#contentarea thead th { font-weight: normal;  }
+#contentarea td { white-space: normal; }
+#contentarea tr.sample td { font-family: monospace; }
+
+/* 幅 */
+#contentarea th { width: 10%; }
+#contentarea th + td { width: 15%; }
+#contentarea th + td + td { width: 75%; }
+#contentarea table.head th { width: 15%; }
+#contentarea table.head th + td { width: 0px;}
+#contentarea table.head th + td + td { width: 85%; }
+#contentarea table.reserved th { width: 15%; }
+#contentarea table.reserved th + td { width: 10%; }
+#contentarea table.reserved th + td + td { width: 10%; }
+#contentarea table.reserved th + td + td + td { width: 65%; }
+#contentarea thead th { width: 15%; }
+#contentarea thead td { width: 85%; }
+#contentarea tr.form th { width: 15%; }
+#contentarea tr.form td { width: 85%; }
+#contentarea tr.parameter th { width: 15%; }
+#contentarea tr.parameter th+td { width: 15%; }
+#contentarea tr.parameter th+td+td { width: 70%; word-wrap: break-word; }
+#contentarea tr.return th { width: 15%; }
+#contentarea tr.return th+td { width: 15%; }
+#contentarea tr.return th+th { width: 15%; }
+#contentarea tr.return th+td+td { width: 70%; }
+#contentarea tr.return th+th+td { width: 70%; }
+#contentarea tr.etc td:nth-last-of-type(2) { width: 15%; }
+#contentarea tr.etc td:nth-last-of-type(1) { width: 70%; }
+#contentarea tr.sample th { width: 15%; }
+#contentarea tr.sample td { width: 85%; }
+#contentarea h3 + p { margin-bottom: 0.75em; }
+
+/* 左右寄せ */
+#contentarea table.head th ,
+#contentarea table.head td { text-align: left; }
+#contentarea th { text-align: right; }
+#contentarea th + td { text-align: right; }
+#contentarea tr.form td { text-align: left; }
+#contentarea thead th , 
+#contentarea thead td { text-align: left; }
+#contentarea table.reserved td { text-align: center; }
+#contentarea table.reserved th + td + td + td { text-align: left; }
+#contentarea tr.parameter td.notice { text-align: left; }
+#contentarea tr.parameter td:nth-last-of-type(2) { text-align: right; }
+#contentarea tr.parameter td:nth-last-of-type(1) { text-align: left; }
+#contentarea tr.return td:nth-last-of-type(2) { text-align: right; }
+#contentarea tr.return td:nth-last-of-type(1) { text-align: left; }
+#contentarea tr.etc td:nth-last-of-type(2) { text-align: right; }
+#contentarea tr.etc td:nth-last-of-type(1) { text-align: left; }
+#contentarea tr.sample td { text-align: left; }
+#contentarea tr.etc td { text-align: left; }
+
+/* カラー */
+#contentarea table.head th ,
+#contentarea table.head td { border-color: rgb(40,50,40); color: white; }
+#contentarea table.head th { background-color: rgb(80,90,80); }
+#contentarea table.head td { background-color: rgb(60,70,60); }
+#contentarea table.head th + td { border-right: none; }
+#contentarea table.head th + td + td { border-left: none; }
+#contentarea th ,
+#contentarea td { border-color: rgb(150,160,150); }
+#contentarea thead th { background-color: rgb(115,130,130); color: white; }
+#contentarea thead td { background-color: rgb(105,120,120); color: white; }
+#contentarea tr.form th { background-color: rgb(230,240,230); }
+#contentarea tr.form td { background-color: rgb(235,240,225); }
+#contentarea tr.parameter th { background-color: rgb(240,238,228); }
+#contentarea tr.parameter td { background-color: rgb(240,237,228); }
+#contentarea tr.return th { background-color: rgb(228,235,240); }
+#contentarea tr.return td { background-color: rgb(228,233,240); }
+#contentarea tr.sample th , 
+#contentarea tr.sample th + td { background-color: rgb(242,242,237); }
+#contentarea tr.sample td { background-color: rgb(237,237,232); }
+#contentarea tr.sample th { border-right: none; }
+#contentarea tr.sample th + td { border-left: none; }
+#contentarea tr.notes th , 
+#contentarea tr.notes th + td { background-color: rgb(242,242,242); }
+#contentarea tr.notes td { background-color: rgb(220,220,220); }
+#contentarea tr.notes th { border-right: none; }
+#contentarea tr.notes th + td { border-left: none; }
+#contentarea tr.etc th , 
+#contentarea tr.etc th + td { background-color: rgb(237,242,242); }
+#contentarea tr.etc td { background-color: rgb(237,242,242); }
+#contentarea tr.etc th { border-right: none; }
+#contentarea tr.etc th + td { border-left: none; }
+#contentarea table.reserved thead th { background-color: rgb(115,130,130); }
+#contentarea table.reserved thead td { background-color: rgb(105,120,120); }
+#contentarea table.reserved th { background-color: rgb(242,242,242); }
+#contentarea table.reserved td { background-color: rgb(220,220,220); }
+#contentarea tr.sample th + td { border: 1px solid rgb(150,160,150); }
+#contentarea tr.etc th + td { border: 1px solid rgb(150,160,150); }
+#contentarea thead th { background-color: rgb(115,130,130); color: white; }
+#contentarea thead td { background-color: rgb(105,120,120); color: white; }
+#contentarea thead:nth-child(n+2) th { background-color: rgb(140,150,150); color: white; }
+#contentarea thead:nth-child(n+2) td { background-color: rgb(210,220,220); color: black; }
+#contentarea tr.parameter:nth-child(1n) th { border-bottom: none; }
+#contentarea tr.parameter:nth-child(n+3) th { border-top: none; border-bottom: none; }
+#contentarea tr.etc:nth-child(1n) th { border-bottom: none; }
+#contentarea tr.etc:nth-child(n+3) th { border-top: none; border-bottom: none; }
+#contentarea tr.parameter+tr.etc th { border-top: 1px solid rgb(150,160,150); }
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media print {
+	#header , 
+	#topmenu , 
+	#infoarea , 
+	#titlearea ,
+	h2.titlearea ,
+	#contentarea div#pdf ,
+	#contentarea div.index ,
+	#attentionarea ,
+	#snsarea ,
+	#amazon ,
+	#footer 
+		{ display: none; }
+	#contentarea table { width: 90%; margin: inherit auto; border-collapse: collapse; border-spacing: 0; page-break-inside: avoid; } 
+	#contentarea td , 
+	#contentarea th { border-collapse: collapse; border-spacing: 0; border: 0.5mm solid black; }
+	#contentarea tr.sample th + td ,
+	#contentarea tr.etc th + td { border: 0.5mm solid black; }
+	#contentarea tr.parameter+tr.etc th { border-top: 0.5mm solid black; }
+	#contentarea table.head th ,
+	#contentarea table.head td { color: black; }
+	#contentarea thead th { color: black; }
+	#contentarea thead td { color: black; }
+	#contentarea table.head th ,
+	#contentarea table.head td { background-color: rgb(200,210,200); }
+	#contentarea thead th ,
+	#contentarea thead td { background-color: rgb(205,220,220); }
+	#contentarea table.head td { background-color: rgb(200,210,200); color: black; }
+	#contentarea thead th ,
+	#contentarea thead td { background-color: rgb(205,220,220); color: black; }
+	#contentarea thead:nth-child(n+2) th { background-color: rgb(200,210,200); color: black; }
+	#contentarea thead:nth-child(n+2) td { background-color: rgb(205,220,220); }
+	}
+
+
